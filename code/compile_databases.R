@@ -2,6 +2,7 @@
 library(dplyr)
 library(plyr) # for rbind.fill()
 library(haven) # for read_sav()
+source("code/compiled_data_json.R")
 
 # ID data ----
 
@@ -110,4 +111,16 @@ combined_data <-
   dplyr::relocate("dxa_date", .after = 2) %>%
   dplyr::relocate("mri_date", .after = 3)
 
-# export 
+# Export ----
+
+# export csv
+write.csv(
+  combined_data,
+  "data/databases/compiled_data.csv",
+  quote = FALSE,
+  row.names = FALSE
+)
+
+# export json
+filename_json <- "data/databases/compiled_data.json"
+write(compiled_data_json(), filename_json)
