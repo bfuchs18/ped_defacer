@@ -10,9 +10,7 @@ compiled_data_json <- function() {
   
   data_list <- list(
     'MeasurementToolMetadata' = list(
-      Description = '',
-      Reference = '',
-      TermURL = ''),
+      Description = 'Demographic and DEXA data from studies Food and Brain (5R01DK110060; ages 7-8y; data collection 2017-2022) and REACH (5R01DK126050; ages 7-9y; data collection 2022-ongoing)'),
     
     CEBL_ID = list( Description = 'Child Eating Behavior Lab (CEBL) ID. This is a participant identifier that is consistent across studies in the CEBL'),
     study_id = list( Description = 'study-specific participant ID'),
@@ -22,12 +20,17 @@ compiled_data_json <- function() {
     # demo variables
     ethnicity = list( Description = 'parent-reported child ethnicicy'),
     race = list( Description = 'parent-reported child race'),
-    #    demo_education_mom = list( Description = 'parent-reported child race'),
-    income = list( Description = 'parent-reported family income'),
+    income = list( Description = 'parent-reported family income. Parent\'s were asked: "Including ALL sources (such as social security income, child support payments, government assistance, dividends from investments, etc.) what was your household\'s combined yearly income last year BEFORE taxes?"',
+                   Levels = list ('0' = 'Less than $20,000',
+                                  '1' = '$21,000 - $35,000',
+                                  '2' = '$36,000 - $50,000',
+                                  '3' = '$51,000 - $75,000',
+                                  '4' = '$76,000 - $100,000',
+                                  '5' = '$100,000 +')),
     sex = list( Description = 'child sex'),
-    age_yr = list( Description = 'child age',
+    age_yr = list( Description = 'child age on dxa_date. Calculated using child DOB (not shared) and dxa_date',
                    Unit = "years"),
-    child_bmi = list( Description = 'Child body mass index. Derived from height and weight values on date of dxa scan',
+    child_bmi = list( Description = 'Child body mass index. Derived from average of 2 height and weight measures on date of dxa scan',
                       Unit = "kg/(m^2)",
                       Derivative = TRUE),
     child_bmi_p = list( Description = 'Child BMI-for-age percentile based on the LMS Parameters for the Centers for Disease Control and Prevention 2000 Growth Charts. Calculated in R using childsds package',
@@ -138,10 +141,6 @@ compiled_data_json <- function() {
     dxa_gynoid_total_mass = list( Description = 'Gynoid Total Mass'),
     dxa_gynoid_perc_fat = list( Description = 'Gynoid Percent Fat'),
     
-    
-    dxa_total_body_perc_fat = list( Description = 'Total Body Percent Fat Result'),
-    dxa_total_body_perc_fat_ptile = list( Description = 'Total Body Percent Fat aged matched percentile'), # name doesnt match FB - dxa_bodyfat_ptile
-    
     dxa_fatmass_height_ratio = list( Description = 'Fat Mass Over Height Result'),
     dxa_fatmass_height_ratio_ptile = list( Description = 'Fat Mass Over Height aged matched percentile'),
     
@@ -150,8 +149,8 @@ compiled_data_json <- function() {
     dxa_percfat_trunk_legs_ratio = list( Description = 'Percent Fat Trunk Over Percent Fat Legs Result'),
     dxa_percfat_trunk_legs_ratio_ptile = list( Description = 'Percent Fat Trunk Over Percent Fat Legs aged matched percentile'),
     
-    dxa_fatmass_trunk_limb_ratio = list( Description = 'Trunk Over Limb Fat Mass Ratio Result'), # name doesnt match FB - dxa_fatmass_trunk_legs_ratio
-    dxa_fatmass_trunk_limb_ratio_ptile = list( Description = 'Trunk Over Limb Fat Mass Ratio aged matched percentile'), # name doesnt match FB - dxa_fatmass_trunk_legs_ratio_ptile
+    dxa_fatmass_trunk_limb_ratio = list( Description = 'Trunk Over Limb Fat Mass Ratio Result'),
+    dxa_fatmass_trunk_limb_ratio_ptile = list( Description = 'Trunk Over Limb Fat Mass Ratio aged matched percentile'),
     
     dxa_est_vat_mass = list( Description = 'Est viseral adipose tissue (VAT) Mass'),
     dxa_est_vat_volume = list( Description = 'Est viseral adipose tissue (VAT) Volume'),
