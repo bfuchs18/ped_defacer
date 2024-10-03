@@ -1,10 +1,8 @@
-#' compiled_data_json: Generates a json file for the the compiled data
+#' compiled_data_json: Generates a json file with descriptions of demographic and dexa variables 
 #'
-#' This function generates a json file for XXXX
-#' @return A string with data stored in JSON format containing meta-data for compiled dataset
-#'
-#'
-#' @export
+#' This function generates a json file for the TSV file exported by code/compile_databases.R
+#' 
+#' @return A string with data stored in JSON format containing meta-data for the TSV file exported by code/compile_databases.R
 
 compiled_data_json <- function() {
   
