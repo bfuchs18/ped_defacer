@@ -10,7 +10,9 @@ compiled_data_json <- function() {
   
   data_list <- list(
     'MeasurementToolMetadata' = list(
-      Description = 'Demographic and DEXA data from studies Food and Brain (5R01DK110060; ages 7-8y; data collection 2017-2022) and REACH (5R01DK126050; ages 7-9y; data collection 2022-ongoing)'),
+      Description = 'Demographic and Dual Energy X-Ray Absorptiometry (DEXA) metrics of body composition (Hologic Inc., Waltham, MA) from studies Food and Brain (5R01DK110060; ages 7-8y; data collection 2017-2022) and REACH (5R01DK126050; ages 7-9y; data collection 2022-ongoing)',
+      Reference = 'Advanced Body Composition Reporting and Interpretation, A Technical Discussion. Thomas L. Kelly, Hologic, Inc.',
+      TermURL = 'https://hologiced.com/library/advanced-body-composition-reporting-and-interpretation-a-technical-discussion/'),
     
     CEBL_ID = list( Description = 'Child Eating Behavior Lab (CEBL) ID. This is a participant identifier that is consistent across studies in the CEBL'),
     study_id = list( Description = 'Study-specific participant ID'),
@@ -129,7 +131,8 @@ compiled_data_json <- function() {
     dxa_l_arm_total_mass = list( Description = 'L Arm Total Mass',
                                  Unit = "g"),
     dxa_l_arm_perc_fat = list( Description = 'dxa_l_arm_perc_fat'),
-    dxa_l_arm_perc_fat_ptile = list( Description = 'L Arm Percent Fat aged matched percentile'),
+    dxa_l_arm_perc_fat_ptile = list( Description = 'L Arm Percent Fat aged matched percentile. Percentiles are based on NHANES data reported by Kelly et al. 2009 and only avaiable for children aged 8+',
+                                     Reference = 'Kelly TL, Wilson KE, Heymsfield SB (2009) Dual Energy X-Ray Absorptiometry Body Composition Reference Values from NHANES. PLOS ONE 4(9): e7038.'),
     dxa_r_arm_fat_mass = list( Description = 'R Arm Fat Mass',
                                Unit = "g"),
     dxa_r_arm_lean_bmc_comb = list( Description = 'R Arm Lean and bone mineral content (BMC) Combined',
@@ -137,7 +140,8 @@ compiled_data_json <- function() {
     dxa_r_arm_total_mass = list( Description = 'R Arm Total Mass',
                                  Unit = "g"),
     dxa_r_arm_perc_fat = list( Description = 'R Arm Percent Fat'),
-    dxa_r_arm_perc_fat_ptile = list( Description = 'R Arm Percent Fat aged matched percentile'),
+    dxa_r_arm_perc_fat_ptile = list( Description = 'R Arm Percent Fat aged matched percentile. Percentiles are based on NHANES data reported by Kelly et al. 2009 and only avaiable for children aged 8+',
+                                     Reference = 'Kelly TL, Wilson KE, Heymsfield SB (2009) Dual Energy X-Ray Absorptiometry Body Composition Reference Values from NHANES. PLOS ONE 4(9): e7038.'),
     
     dxa_trunk_fat_mass = list( Description = 'Trunk Fat Mass',
                                Unit = "g"),
@@ -146,7 +150,8 @@ compiled_data_json <- function() {
     dxa_trunk_total_mass = list( Description = 'Trunk Total Mass',
                                  Unit = "g"),
     dxa_trunk_perc_fat = list( Description = 'Trunk Percent Fat'),
-    dxa_trunk_perc_fat_ptile = list( Description = 'Trunk Percent Fat aged matched percentile'),
+    dxa_trunk_perc_fat_ptile = list( Description = 'Trunk Percent Fat aged matched percentile. Percentiles are based on NHANES data reported by Kelly et al. 2009 and only avaiable for children aged 8+',
+                                     Reference = 'Kelly TL, Wilson KE, Heymsfield SB (2009) Dual Energy X-Ray Absorptiometry Body Composition Reference Values from NHANES. PLOS ONE 4(9): e7038.'),
     
     dxa_l_leg_fat_mass = list( Description = 'L Leg Fat Mass',
                                Unit = "g"),
@@ -155,7 +160,8 @@ compiled_data_json <- function() {
     dxa_l_leg_total_mass = list( Description = 'L Leg Total Mass',
                                  Unit = "g"),
     dxa_l_leg_perc_fat = list( Description = 'L Leg Percent Fat'),
-    dxa_l_leg_perc_fat_ptile = list( Description = 'L Leg Percent Fat aged matched percentile'),
+    dxa_l_leg_perc_fat_ptile = list( Description = 'L Leg Percent Fat aged matched percentile. Percentiles are based on NHANES data reported by Kelly et al. 2009 and only avaiable for children aged 8+',
+                                     Reference = 'Kelly TL, Wilson KE, Heymsfield SB (2009) Dual Energy X-Ray Absorptiometry Body Composition Reference Values from NHANES. PLOS ONE 4(9): e7038.'),
     dxa_r_leg_fat_mass = list( Description = 'R Leg Fat Mass',
                                Unit = "g"),
     dxa_r_leg_lean_bmc_comb = list( Description = 'R Leg Lean And bone mineral content (BMC) Combined',
@@ -163,7 +169,8 @@ compiled_data_json <- function() {
     dxa_r_leg_total_mass = list( Description = 'R Leg Total Mass',
                                  Unit = "g"),
     dxa_r_leg_perc_fat = list( Description = 'R Leg Percent Fat'),
-    dxa_r_leg_perc_fat_ptile = list( Description = 'R Leg Percent Fat aged matched percentile'),
+    dxa_r_leg_perc_fat_ptile = list( Description = 'R Leg Percent Fat aged matched percentile. Percentiles are based on NHANES data reported by Kelly et al. 2009 and only avaiable for children aged 8+',
+                                     Reference = 'Kelly TL, Wilson KE, Heymsfield SB (2009) Dual Energy X-Ray Absorptiometry Body Composition Reference Values from NHANES. PLOS ONE 4(9): e7038.'),
     
     dxa_subtotal_fat_mass = list( Description = 'Subtotal Fat Mass',
                                   Unit = "g"),
@@ -172,7 +179,8 @@ compiled_data_json <- function() {
     dxa_subtotal_total_mass = list( Description = 'Subtotal Total Mass',
                                     Unit = "g"),
     dxa_subtotal_perc_fat = list( Description = 'Subtotal Percent Fat'),
-    dxa_subtotal_perc_fat_ptile = list( Description = 'Subtotal Percent Fat aged matched percentile'),
+    dxa_subtotal_perc_fat_ptile = list( Description = 'Subtotal Percent Fat aged matched percentile. Percentiles are based on NHANES data reported by Kelly et al. 2009 and only avaiable for children aged 8+',
+                                        Reference = 'Kelly TL, Wilson KE, Heymsfield SB (2009) Dual Energy X-Ray Absorptiometry Body Composition Reference Values from NHANES. PLOS ONE 4(9): e7038.'),
     
     dxa_head_fat_mass = list( Description = 'Head Fat Mass',
                               Unit = "g"),
@@ -188,7 +196,8 @@ compiled_data_json <- function() {
     dxa_total_total_mass = list( Description = 'Total Total Mass',
                                  Unit = "g"),
     dxa_total_perc_fat = list( Description = 'Total Percent Fat'),
-    dxa_total_perc_fat_ptile = list( Description = 'Total Percent Fat aged matched percentile'),
+    dxa_total_perc_fat_ptile = list( Description = 'Total Percent Fat aged matched percentile. Percentiles are based on NHANES data reported by Kelly et al. 2009 and only avaiable for children aged 8+',
+                                     Reference = 'Kelly TL, Wilson KE, Heymsfield SB (2009) Dual Energy X-Ray Absorptiometry Body Composition Reference Values from NHANES. PLOS ONE 4(9): e7038.'),
     
     dxa_android_fat_mass = list( Description = 'Android Fat Mass',
                                  Unit = "g"),
@@ -208,15 +217,18 @@ compiled_data_json <- function() {
     
     dxa_fatmass_height_ratio = list( Description = 'Fat Mass Over Height Result',
                                      Unit = "kg/m^2"),
-    dxa_fatmass_height_ratio_ptile = list( Description = 'Fat Mass Over Height aged matched percentile'),
+    dxa_fatmass_height_ratio_ptile = list( Description = 'Fat Mass Over Height aged matched percentile. Percentiles are based on NHANES data reported by Kelly et al. 2009 and only avaiable for children aged 8+',
+                                           Reference = 'Kelly TL, Wilson KE, Heymsfield SB (2009) Dual Energy X-Ray Absorptiometry Body Composition Reference Values from NHANES. PLOS ONE 4(9): e7038.'),
     
     dxa_android_gynoid_ratio = list( Description = 'Android Over Gynoid Ratio Result'),
     
     dxa_percfat_trunk_legs_ratio = list( Description = 'Percent Fat Trunk Over Percent Fat Legs Result'),
-    dxa_percfat_trunk_legs_ratio_ptile = list( Description = 'Percent Fat Trunk Over Percent Fat Legs aged matched percentile'),
+    dxa_percfat_trunk_legs_ratio_ptile = list( Description = 'Percent Fat Trunk Over Percent Fat Legs aged matched percentile. Percentiles are based on NHANES data reported by Kelly et al. 2009 and only avaiable for children aged 8+',
+                                               Reference = 'Kelly TL, Wilson KE, Heymsfield SB (2009) Dual Energy X-Ray Absorptiometry Body Composition Reference Values from NHANES. PLOS ONE 4(9): e7038.'),
     
     dxa_fatmass_trunk_limb_ratio = list( Description = 'Trunk Over Limb Fat Mass Ratio Result'),
-    dxa_fatmass_trunk_limb_ratio_ptile = list( Description = 'Trunk Over Limb Fat Mass Ratio aged matched percentile'),
+    dxa_fatmass_trunk_limb_ratio_ptile = list( Description = 'Trunk Over Limb Fat Mass Ratio aged matched percentile. Percentiles are based on NHANES data reported by Kelly et al. 2009 and only avaiable for children aged 8+',
+                                               Reference = 'Kelly TL, Wilson KE, Heymsfield SB (2009) Dual Energy X-Ray Absorptiometry Body Composition Reference Values from NHANES. PLOS ONE 4(9): e7038.'),
     
     dxa_est_vat_mass = list( Description = 'Est viseral adipose tissue (VAT) Mass',
                              Unit = "g"),
@@ -227,11 +239,13 @@ compiled_data_json <- function() {
     
     dxa_lean_height_ratio = list( Description = 'Lean Over Height Result',
                                   Unit = "kg/m^2"),
-    dxa_lean_height_ratio_ptile = list( Description = 'Lean Over Height aged matched percentile'),
+    dxa_lean_height_ratio_ptile = list( Description = 'Lean Over Height aged matched percentile. Percentiles are based on NHANES data reported by Kelly et al. 2009 and only avaiable for children aged 8+',
+                                        Reference = 'Kelly TL, Wilson KE, Heymsfield SB (2009) Dual Energy X-Ray Absorptiometry Body Composition Reference Values from NHANES. PLOS ONE 4(9): e7038.'),
     
     dxa_appen_lean_height = list( Description = 'Appen Lean Over Height Result',
                                   Unit = "kg/m^2"),
-    dxa_appen_lean_height_ptile = list( Description = 'Appen Lean Over Height aged matched percentile'),
+    dxa_appen_lean_height_ptile = list( Description = 'Appen Lean Over Height aged matched percentile. Percentiles are based on NHANES data reported by Kelly et al. 2009 and only avaiable for children aged 8+',
+                                        Reference = 'Kelly TL, Wilson KE, Heymsfield SB (2009) Dual Energy X-Ray Absorptiometry Body Composition Reference Values from NHANES. PLOS ONE 4(9): e7038.'),
     
     dxa_l_arm_lean_mass = list( Description = 'L Arm Lean Mass',
                                 Unit = "g"),
