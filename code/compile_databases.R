@@ -140,6 +140,14 @@ combined_data <- combined_data[combined_data$study_id %in% mri_subs, ]
 # remove dxa_total_body_perc_fat and dxa_total_body_perc_fat_ptile columns -- these are equivalent to dxa_total_perc_fat and dxa_total_perc_fat_ptile
 combined_data <- combined_data[, !names(combined_data) %in% c("dxa_total_body_perc_fat","dxa_total_body_perc_fat_ptile")]
 
+# Create meta data for TMT2 ----
+tmt_data <- combined_data[c("study_id", "age_yr", "sex")]
+tmt_data$filename <- paste0("/out/data/input/", tmt_data$study_id, "_t1.nii")
+names(tmt_data)[names(tmt_data) == "age_yr"] <- "age"
+tmt_data$sex <- recode(tmt_data$sex, Female = "F", Male = "M") # recode sex
+tmt_data <- subset(tmt_data, select = -c(study_id))
+tmt_data <- tmt_data[c("filename", "age", "sex")] #reorder columns
+
 # Export ----
 
 # export csv
@@ -153,3 +161,12 @@ write.csv(
 # export json
 filename_json <- "data/databases/compiled_data.json"
 write(compiled_data_json(), filename_json)
+
+# export csv for tmt processing
+write.csv(
+  tmt_data,
+  paste0("data/meta.csv"),
+  quote = FALSE,
+  row.names = FALSE
+)
+
