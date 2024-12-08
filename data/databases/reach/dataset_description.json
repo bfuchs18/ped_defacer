@@ -1,0 +1,23 @@
+{
+	"Name" : "Survey, questionnarie, and phenotype data",
+	"BIDSVersion" : "XXX",
+	"DatasetType" : "Phenotype",
+	"GeneratedBy" : {
+		"Name" : "dataREACHr",
+		"Version" : "dataREACHr is not versioned. Datasets were generated on 2024-12-08 using the code from the GitHub repository at that time. Thus, this date serves as a reference point for the specific code version employed.",
+		"Description" : "Datasets were generated using dataREACHr function proc_redcap.R",
+		"URL" : "https://github.com/bfuchs18/dataREACHr"
+	},
+	"SourceDatasets" : [
+		{
+			"Name" : "Visit data",
+			"Description" : "Visit data downloaded from REDCap project 'Food Marketing Resilience/Project REACH' on date specified in filename (see Version)",
+			"Version" : "FoodMarketingResilie_DATA_2024-12-08_1402.csv"
+		},
+		{
+			"Name" : "Double-entry data",
+			"Description" : "Double-entry data downloaded from REDCap project 'REACH Data Double Entry' on date specified in filename (see Version)",
+			"Version" : "REACHDataDoubleEntry_DATA_2024-10-24_1625.csv"
+		}
+	]
+}

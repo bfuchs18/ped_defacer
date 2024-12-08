@@ -1,0 +1,147 @@
+{
+	"participant_id" : {
+		"Description" : "participant id number"
+	},
+	"session_id" : {
+		"Description" : "BIDS session ID indicating when data was collected",
+		"Levels" : {
+			"ses-1" : "session 1 / baseline",
+			"ses-2" : "session 2 / follow-up"
+		}
+	},
+	"visit_protocol" : {
+		"Description" : "REACH child visit protocol for data collection",
+		"Levels" : {
+			"1" : "Child visit protocol 1",
+			"5" : "Child visit protocol 5"
+		}
+	},
+	"child_height_1_cm" : {
+		"Description" : "child height measurement 1",
+		"Unit" : "cm"
+	},
+	"child_height_2_cm" : {
+		"Description" : "child height measurement 2",
+		"Unit" : "cm"
+	},
+	"child_weight_1_kg" : {
+		"Description" : "child weight measurement 1",
+		"Unit" : "kg"
+	},
+	"child_weight_2_kg" : {
+		"Description" : "child weight measurement 2",
+		"Unit" : "kg"
+	},
+	"child_height_average" : {
+		"Description" : "average of child_height_1_cm and child_height_2_cm",
+		"Unit" : "cm",
+		"Derivative" : true
+	},
+	"child_weight_average" : {
+		"Description" : "average of child_weight_1_kg and child_weight_2_kg",
+		"Unit" : "kg",
+		"Derivative" : true
+	},
+	"parent1_sex" : {
+		"Description" : "Sex of parent being measured",
+		"Levels" : {
+			"female" : "female",
+			"male" : "male"
+		}
+	},
+	"parent1_height_1_cm" : {
+		"Description" : "parent height measurement 1",
+		"Unit" : "cm"
+	},
+	"parent1_height_2_cm" : {
+		"Description" : "parent height measurement 2",
+		"Unit" : "cm"
+	},
+	"parent1_weight_1_kg" : {
+		"Description" : "parent weight measurement 1",
+		"Unit" : "kg"
+	},
+	"parent1_weight_2_kg" : {
+		"Description" : "parent weight measurement 2",
+		"Unit" : "kg"
+	},
+	"parent1_height_average_cm" : {
+		"Description" : "average of parent1_height_1_cm and parent1_height_2_cm",
+		"Unit" : "cm",
+		"Derivative" : true
+	},
+	"parent1_weight_average_kg" : {
+		"Description" : "average of parent1_weight_1_kg and parent1_weight_2_kg",
+		"Unit" : "kg",
+		"Derivative" : true
+	},
+	"parent1_bmi" : {
+		"Description" : "BMI of parent with measured height and weight. Calculated in R using parent1_height_average_cm and parent1_weight_average_kg",
+		"Unit" : "kg/(m^2)",
+		"Derivative" : true
+	},
+	"parent2_reported_bmi" : {
+		"Description" : "Parent2 (i.e., biological parent not at visit) BMI calculated from parent1 reported metrics (see household.tsv). Also reported in household.tsv",
+		"Unit" : "kg/(m^2)",
+		"Derivative" : true
+	},
+	"demo_child_relationship" : {
+		"Description" : "Child relationship of adult completing the household demographics form where parent2 anthropometrics were reported. Also reported in household.tsv.",
+		"Levels" : {
+			"0" : "Biological mother",
+			"1" : "Biological father",
+			"2" : "Non-biological mother",
+			"3" : "Non-biological father"
+		}
+	},
+	"sex" : {
+		"Description" : "Child sex. Used to calculate child_bmi_p and child_bmi_z. Also reported in demographics.tsv",
+		"Levels" : {
+			"female" : "female",
+			"male" : "male"
+		}
+	},
+	"child_age" : {
+		"Description" : "Child age. Used to calculate child_bmi_p and child_bmi_z. Also reported in demographics.tsv",
+		"unit" : "years"
+	},
+	"child_bmi" : {
+		"Description" : "Child BMI. Calculated in R using child_height_average and child_average_weight",
+		"Unit" : "kg/(m^2)",
+		"Derivative" : true
+	},
+	"child_bmi_p" : {
+		"Description" : "Child BMI-for-age-and-sex percentile based on the LMS Parameters for the Centers for Disease Control and Prevention 2000 Growth Charts. Calculated in R using childsds package",
+		"Derivative" : true
+	},
+	"child_bmi_z" : {
+		"Description" : "Child BMI-for-age-age-and-sex z-score baesd on the LMS Parameters for the Centers for Disease Control and Prevention 2000 Growth Charts. Calculated in R using childsds package",
+		"Derivative" : true
+	},
+	"maternal_anthro_method" : {
+		"Description" : "Method used to determine maternal anthropometrics. Equal to \"measured\" if parent1_sex == \"female\" and equal to \"reported\" if \"demo_child_relationship\" == 1 (biological father)",
+		"Levels" : {
+			"measured" : "measured by researcher",
+			"reported" : "reported by biological father on household demographic form"
+		},
+		"Derivative" : true
+	},
+	"maternal_bmi" : {
+		"Description" : "Maternal BMI. Equal to parent1_bmi if maternal_anthro_method == \"measured\" and equal to parent2_reported_bmi if maternal_anthro_method == \"reported\"",
+		"Unit" : "kg/(m^2)",
+		"Derivative" : true
+	},
+	"paternal_anthro_method" : {
+		"Description" : "Method used to determine paternal anthropometrics. Equal to \"measured\" if parent1_sex == \"male\" and equal to \"reported\" if \"demo_child_relationship\" == 0 (biological mom)",
+		"Levels" : {
+			"measured" : "measured by researcher",
+			"reported" : "reported by mother on household demographic form"
+		},
+		"Derivative" : true
+	},
+	"paternal_bmi" : {
+		"Description" : "Paternal BMI. Equal to parent1_bmi if paternal_anthro_method == \"measured\" and equal to parent2_reported_bmi if paternal_anthro_method == \"reported\"",
+		"Unit" : "kg/(m^2)",
+		"Derivative" : true
+	}
+}

@@ -1,0 +1,742 @@
+{
+	"MeasurementToolMetadata" : {
+		"Description" : "Behavioral Rating Inventory of Executive Function-2. Participants were provided the following instructions: \"Please answer each question as it pertains to your child with never, sometimes or often\"",
+		"Reference" : "Gioia GA, Isquith PK, Guy SC, Kenworthy L. BRIEF-2: Behavior Rating Inventory of Executive Function: Professional Manual. Psychological Assessment Resources; 2015.",
+		"TermURL" : "https://www.cognitiveatlas.org/task/id/tsk_4a57abb9498ab/"
+	},
+	"participant_id" : {
+		"Description" : "participant id number"
+	},
+	"session_id" : {
+		"Description" : "BIDS session ID indicating when data was collected",
+		"Levels" : {
+			"ses-1" : "session 1 / baseline",
+			"ses-2" : "session 2 / follow-up"
+		}
+	},
+	"brief_form_date" : {
+		"Description" : "Date (YYYY-MM-DD) BRIEF-2 form was completed on redcap"
+	},
+	"sex" : {
+		"Description" : "parent-reported child sex",
+		"Levels" : {
+			"female" : "female",
+			"male" : "male"
+		}
+	},
+	"brief_age" : {
+		"Description" : "child age when BRIEF-2 was completed. Calculated as the difference between brief_form_date and child's date of birth",
+		"Derivative" : true,
+		"Units" : "years"
+	},
+	"brief1" : {
+		"Description" : "My child is fidgety",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief2" : {
+		"Description" : "My child resists or has trouble accepting a different way to solve a problem with schoolwork, friends, tasks, etc.",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief3" : {
+		"Description" : "My child, when given three things to do, remembers only the first or last",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief4" : {
+		"Description" : "My child is unaware of how his/her behavior affects or bothers others",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief5" : {
+		"Description" : "My child's work is sloppy",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief6" : {
+		"Description" : "My child has explosive, angry outbursts",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief7" : {
+		"Description" : "My child does not plan ahead for school assignments",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief8" : {
+		"Description" : "My child cannot find things in their room or in their school desk",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief9" : {
+		"Description" : "My child is not a self-starter",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief10" : {
+		"Description" : "My child does not think before doing (is impulsive)",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief11" : {
+		"Description" : "My child has trouble getting used to new situations (classes, groups, friends, etc.)",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief12" : {
+		"Description" : "My child has a short attention span",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief13" : {
+		"Description" : "My child has poor understanding of own strengths and weaknesses",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief14" : {
+		"Description" : "My child has outbursts for little reason",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief15" : {
+		"Description" : "My child gets caught up in details and misses the big picture",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief16" : {
+		"Description" : "My child gets out of control more than friends",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief17" : {
+		"Description" : "My child gets stuck on one topic or activity",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief18" : {
+		"Description" : "My child forgets his/her name",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief19" : {
+		"Description" : "My child has trouble with chores or tasks that have more than one step",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief20" : {
+		"Description" : "My child does not realize that certain actions bother others",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief21" : {
+		"Description" : "My child's written work is poorly organized",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief22" : {
+		"Description" : "Small events trigger big reactions with my child",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief23" : {
+		"Description" : "My child has good ideas but does not get the job done (lacks follow-through)",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief24" : {
+		"Description" : "My child talks at the wrong time",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief25" : {
+		"Description" : "My child has trouble finishing tasks (chores, homework, etc.)",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief26" : {
+		"Description" : "My child does not notice when his/her behavior causes negative reactions",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief27" : {
+		"Description" : "My child reacts more strongly to situations than other children",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief28" : {
+		"Description" : "My child has trouble remembering things, even for a few minutes",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief29" : {
+		"Description" : "My child makes careless errors",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief30" : {
+		"Description" : "My child gets out of seat at the wrong times",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief31" : {
+		"Description" : "My child becomes upset with new situations",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief32" : {
+		"Description" : "My child has trouble concentrating on tasks, schoolwork, etc.",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief33" : {
+		"Description" : "My child has poor handwriting",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief34" : {
+		"Description" : "My child's mood changes frequently",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief35" : {
+		"Description" : "My child has good ideas but cannot get them on paper",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief36" : {
+		"Description" : "My child has trouble counting to three",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief37" : {
+		"Description" : "My child leaves messes that others have to clean up",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief38" : {
+		"Description" : "My child needs to be told when to begin a task even when willing",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief39" : {
+		"Description" : "My child acts too wild or \"out of control\"",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief40" : {
+		"Description" : "My child thinks too much about the same topic",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief41" : {
+		"Description" : "My child forgets what he/she was doing",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief42" : {
+		"Description" : "My child does not check work for mistakes",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief43" : {
+		"Description" : "My child's angry or tearful outbursts are intense but end suddenly",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief44" : {
+		"Description" : "My child becomes overwhelmed by large assignments",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief45" : {
+		"Description" : "My child loses lunch box, lunch money, permission slips, homework, etc.",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief46" : {
+		"Description" : "My child needs help from an adult to stay on task",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief47" : {
+		"Description" : "My child forgets to hand in homework, even when completed",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief48" : {
+		"Description" : "My child has trouble putting the brakes on his/her actions",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief49" : {
+		"Description" : "My child resists change of routine, foods, places, etc.",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief50" : {
+		"Description" : "My child has trouble getting started on homework or tasks",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief51" : {
+		"Description" : "My child's mood is easily influenced by the situation",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief52" : {
+		"Description" : "My child underestimates time needed to finish tasks",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief53" : {
+		"Description" : "My child does not bring home homework, assignment sheets, materials, etc.",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief54" : {
+		"Description" : "My child cannot find the front door of home",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief55" : {
+		"Description" : "My child does not take initiative",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief56" : {
+		"Description" : "My child becomes upset too easily",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief57" : {
+		"Description" : "My child starts assignments or tasks at the last minute",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief58" : {
+		"Description" : "My child has trouble moving from one activity to another",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief59" : {
+		"Description" : "My child has trouble carrying out the actions needed to reach goals (saving money for special item, studying to get a good grade, etc.)",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief60" : {
+		"Description" : "My child is disturbed by change of teacher or class",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief61" : {
+		"Description" : "My child has trouble organizing activities with friends",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief62" : {
+		"Description" : "My child becomes too silly",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief63" : {
+		"Description" : "My child leaves a trail of belongings wherever he/she goes",
+		"Levels" : {
+			"0" : "Never",
+			"1" : "Sometimes",
+			"2" : "Often"
+		}
+	},
+	"brief2_inhibit" : {
+		"Description" : "Inhibition",
+		"Derivative" : true
+	},
+	"brief2_inhibit_t" : {
+		"Description" : "Inhibition T-score",
+		"Derivative" : true
+	},
+	"brief2_inhibit_p" : {
+		"Description" : "Inhibition Percentile",
+		"Derivative" : true
+	},
+	"brief2_selfmon" : {
+		"Description" : "Self-Monitoring",
+		"Derivative" : true
+	},
+	"brief2_selfmon_t" : {
+		"Description" : "Self-Monitoring T-score",
+		"Derivative" : true
+	},
+	"brief2_selfmon_p" : {
+		"Description" : "Self-Monitoring Percentile",
+		"Derivative" : true
+	},
+	"brief2_shift" : {
+		"Description" : "Shifting",
+		"Derivative" : true
+	},
+	"brief2_shift_t" : {
+		"Description" : "Shifting T-score",
+		"Derivative" : true
+	},
+	"brief2_shift_p" : {
+		"Description" : "Shifting Percentile",
+		"Derivative" : true
+	},
+	"brief2_emcont" : {
+		"Description" : "Emotional Control",
+		"Derivative" : true
+	},
+	"brief2_emcont_t" : {
+		"Description" : "Emotional Control T-score",
+		"Derivative" : true
+	},
+	"brief2_emcont_p" : {
+		"Description" : "Emotional Control Percentile",
+		"Derivative" : true
+	},
+	"brief2_initiate" : {
+		"Description" : "Initiate",
+		"Derivative" : true
+	},
+	"brief2_initiate_t" : {
+		"Description" : "Initiate T-score",
+		"Derivative" : true
+	},
+	"brief2_initiate_p" : {
+		"Description" : "Initiate Percentile",
+		"Derivative" : true
+	},
+	"brief2_wm" : {
+		"Description" : "Working Memory",
+		"Derivative" : true
+	},
+	"brief2_wm_t" : {
+		"Description" : "Working Memory T-score",
+		"Derivative" : true
+	},
+	"brief2_wm_p" : {
+		"Description" : "Working Memory Percentile",
+		"Derivative" : true
+	},
+	"brief2_planorg" : {
+		"Description" : "Planning/Organization",
+		"Derivative" : true
+	},
+	"brief2_planorg_t" : {
+		"Description" : "Planning/Organization T-score",
+		"Derivative" : true
+	},
+	"brief2_planorg_p" : {
+		"Description" : "Planning/Organization Percentile",
+		"Derivative" : true
+	},
+	"brief2_taskmon" : {
+		"Description" : "Task Monitoring",
+		"Derivative" : true
+	},
+	"brief2_taskmon_t" : {
+		"Description" : "Task Monitoring T-score",
+		"Derivative" : true
+	},
+	"brief2_taskmon_p" : {
+		"Description" : "Task Monitoring Percentile",
+		"Derivative" : true
+	},
+	"brief2_orgmat" : {
+		"Description" : "Organiation of Materials",
+		"Derivative" : true
+	},
+	"brief2_orgmat_t" : {
+		"Description" : "Organiation of Materials T-score",
+		"Derivative" : true
+	},
+	"brief2_orgmat_p" : {
+		"Description" : "Organiation of Materials Percentile",
+		"Derivative" : true
+	},
+	"brief2_bri" : {
+		"Description" : "Behavioral Regulation Index",
+		"Derivative" : true
+	},
+	"brief2_bri_t" : {
+		"Description" : "Behavioral Regulation Index T-score",
+		"Derivative" : true
+	},
+	"brief2_bri_p" : {
+		"Description" : "Behavioral Regulation Index Percentile",
+		"Derivative" : true
+	},
+	"brief2_eri" : {
+		"Description" : "Emotional Regulaiton Index",
+		"Derivative" : true
+	},
+	"brief2_eri_t" : {
+		"Description" : "Emotional Regulaiton Index T-score",
+		"Derivative" : true
+	},
+	"brief2_eri_p" : {
+		"Description" : "Emotional Regulaiton Index Percentile",
+		"Derivative" : true
+	},
+	"brief2_cri" : {
+		"Description" : "Cognitive Regulation Index",
+		"Derivative" : true
+	},
+	"brief2_cri_t" : {
+		"Description" : "Cognitive Regulation Index T-score",
+		"Derivative" : true
+	},
+	"brief2_cri_p" : {
+		"Description" : "Cognitive Regulation Index Percentile",
+		"Derivative" : true
+	},
+	"brief2_gec" : {
+		"Description" : "General Executive Composite",
+		"Derivative" : true
+	},
+	"brief2_gec_t" : {
+		"Description" : "General Executive Composite T-score",
+		"Derivative" : true
+	},
+	"brief2_gec_p" : {
+		"Description" : "General Executive Composite Percentile",
+		"Derivative" : true
+	},
+	"brief2_negativity" : {
+		"Description" : "Negativity Check",
+		"Derivative" : true
+	},
+	"brief2_negativity_p" : {
+		"Description" : "Negativity Check Percentile",
+		"Derivative" : true
+	},
+	"brief2_negativity_cat" : {
+		"Description" : "Negativity Check Category",
+		"Levels" : {
+			"0" : "<=98",
+			"1" : "99",
+			"2" : ">99"
+		},
+		"Derivative" : true
+	},
+	"brief2_inconsistency" : {
+		"Description" : "Inconsistency Check",
+		"Derivative" : true
+	},
+	"brief2_inconsistency_p" : {
+		"Description" : "Inconsistency Check Percentile",
+		"Derivative" : true
+	},
+	"brief2_inconsistency_cat" : {
+		"Description" : "Inconsistency Check Category",
+		"Levels" : {
+			"0" : "<=98",
+			"1" : "99",
+			"2" : ">99"
+		},
+		"Derivative" : true
+	},
+	"brief2_infrequency" : {
+		"Description" : "Infrequency",
+		"Derivative" : true
+	},
+	"brief2_infrequency_p" : {
+		"Description" : "Infrequency Percentile",
+		"Derivative" : true
+	},
+	"brief2_infrequency_cat" : {
+		"Description" : "Infrequency Category",
+		"Levels" : {
+			"0" : "Acceptable",
+			"1" : "Questionable"
+		},
+		"Derivative" : true
+	}
+}
